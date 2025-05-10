@@ -11,7 +11,7 @@ const Service=()=>{
         <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam eos mollitia temporibus vitae dolorum repudiandae, illo quaerat, at eaque inventore saepe ducimus repellendus laboriosam adipisci eveniet, voluptatem culpa nisi. Pariatur animi aperiam laborum eligendi similique obcaecati quis eum quibusdam dolore.</p>
 
 
-        <div className="grid grid-cols-['repeat(auto-fit, minmax(200px, 1fr) )'] gap-6 my-10 ">
+        <div className="grid grid-cols-(--thisVar) gap-6 my-10 ">
         {serviceData.map(({icon,title,description,link},index)=>{
             return(
                 <div key={index} className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-lighHover hover:-translate-y-1 duration-500">

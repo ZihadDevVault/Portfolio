@@ -30,13 +30,13 @@ const Navbar=()=>{
         <img src={assets.header_bg_color} alt="Bg-color" className="w-full"/>
     </div>
 
-        <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm' : ""}`}>
+        <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll ? 'bg-white-500/50 backdrop-blur-lg shadow-sm' : ""}`}>
             <a href='#top'>
 
             <img src={assets.logo} className="w-28 cursor-pointer mr1-4"/>
             </a>
 
-            <ul className={`hidden  md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3  ${isScroll? "" : "bg-white shadow-sm bg-opacity-50"}`}>
+            <ul className={`hidden  md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3  ${isScroll? "" : " shadow-sm bg-white-500/50"}`}>
                 <li><a className='font-Ovo' href="#top">Home</a></li>
                 <li><a className='font-Ovo' href="#About">About me</a></li>
                 <li><a className='font-Ovo' href="#Sevices">Services</a></li>
