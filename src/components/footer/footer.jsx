@@ -1,13 +1,16 @@
 import { assets } from "../../assets/assets";
 
-const Footer=()=>{
+const Footer=({isDarkMode})=>{
     return(
         <div className="mt-20">
             <div className="text-center ">
-                <img src={assets.logo} className="w-36 mx-auto mb-2" />
+                <a href='#top'>
+            <h1 className='font-bold text-black/80 dark:text-white text-2xl font-Outfit'>Engr.Zihad<span className='text-[#ff0000] font-bold text-2xl ms-2'>.</span></h1>
+            
+            </a>
             </div>
             <div className="w-max flex items-center gap-2 mx-auto">
-                <img src={assets.mail_icon} className="w-6"/>
+                <img src={isDarkMode?assets.mail_icon_dark:assets.mail_icon} className="w-6"/>
                 engr.zihadmia@gmail.com
             </div>
             <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6 ">
